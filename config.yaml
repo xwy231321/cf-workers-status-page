@@ -26,7 +26,7 @@ monitors:
  - id: xwy-alist-阿里云 # unique identifier
     name: alist-阿里云副站点
     description: 'xwy阿里云上的alist副站点' # default=empty
-    url: 'https://xwy231321.top:5243/' # URL to fetch
+    url: 'https://xwy231321.top:5243' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
