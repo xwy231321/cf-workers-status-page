@@ -1,33 +1,33 @@
 settings:
-  title: 'Status Page'
+  title: '运行状况检测'
   url: 'https://cf-workers-status-page-production.15130907875.workers.dev' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
-  allmonitorsOperational: 'All Systems Operational'
-  notAllmonitorsOperational: 'Not All Systems Operational'
-  monitorLabelOperational: 'Operational'
-  monitorLabelNotOperational: 'Not Operational'
-  monitorLabelNoData: 'No data'
-  dayInHistogramNoData: 'No data'
-  dayInHistogramOperational: 'All good'
+  allmonitorsOperational: '一切正常'
+  notAllmonitorsOperational: '存在异常站点'
+  monitorLabelOperational: '正在运行'
+  monitorLabelNotOperational: '未运行'
+  monitorLabelNoData: '暂无数据'
+  dayInHistogramNoData: '暂无数据'
+  dayInHistogramOperational: '一切正常'
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: alist-ali # unique identifier
-    name: alist-ali
-    description: 'You write code. They handle the rest.' # default=empty
+  - id: xwy-alist-主站点
+    name: alist-主站点
+    description: 'xwy的alist主站点'
+    url: 'https://xwy231321.top'
+    method: GET
+    expectStatus: 200
+    linkable: true # allows the title to be a link, default=true
+
+ - id: xwy-alist-阿里云 # unique identifier
+    name: alist-阿里云副站点
+    description: 'xwy阿里云上的alist副站点' # default=empty
     url: 'https://xwy231321.top:5243/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
-
-  - id: alist-mian
-    name: alist-mian
-    description: 'Built for anything connected to the Internet.'
-    url: 'https://xwy231321.top'
-    method: GET
-    expectStatus: 200
     linkable: true # allows the title to be a link, default=true
