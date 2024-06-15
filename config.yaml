@@ -15,16 +15,16 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: xwy-alist-主站点
-    name: alist-主站点
+  - id: xwy-alist-mian
+    name: xwy-alist-mian
     description: 'xwy的alist主站点'
     url: 'https://xwy231321.top'
     method: GET
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
 
- - id: xwy-alist-阿里云 # unique identifier
-    name: alist-阿里云副站点
+ - id: xwy-alist-other # unique identifier
+    name: xwy-alist-other
     description: 'xwy阿里云上的alist副站点' # default=empty
     url: 'https://xwy231321.top:5243' # URL to fetch
     method: GET # default=GET
