@@ -17,7 +17,7 @@ settings:
 monitors:
   - id: xwy-alist-mian
     name: xwy-alist-mian
-    description: 'xwy的alist主站点'
+    description: 'xwy-alist-mian'
     url: 'https://xwy231321.top'
     method: GET
     expectStatus: 200
@@ -25,7 +25,7 @@ monitors:
 
  - id: xwy-alist-other # unique identifier
     name: xwy-alist-other
-    description: 'xwy阿里云上的alist副站点' # default=empty
+    description: 'xwy-aliyun-alist' # default=empty
     url: 'https://xwy231321.top:5243' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
