@@ -5,7 +5,7 @@ settings:
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
-   allmonitorsOperational: 'All Systems Operational'
+  allmonitorsOperational: 'All Systems Operational'
   notAllmonitorsOperational: 'Not All Systems Operational'
   monitorLabelOperational: 'Operational'
   monitorLabelNotOperational: 'Not Operational'
@@ -29,5 +29,5 @@ monitors:
     url: 'https://xwy231321.top:5243' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
+    #followRedirect: false # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
